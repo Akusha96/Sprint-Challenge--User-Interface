@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -61,20 +62,48 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
+div.top-header{
 
+  margin-left:30px;
+}
+.img img{
+  width:130%;
+}
+.logo{
+
+  
+ padding:40px;
+ margin-left:10px;
+}
+nav .links{
+    width: 80%;
+    display:flex;
+    justify-content:space-between;
+    padding: 30px 2%;
+    font-size: 17px;
+    margin-left:180px;
+    margin-top:-50px;
+}
+.links a{
+  color:black;
+
+}
 p {
     line-height: 1.4;
+  
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
+div.container{
+  margin-left:-10px;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -82,7 +111,9 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+   
+  
 }
 
 .middle-content {
@@ -95,52 +126,132 @@ p {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.middle-content .boxes   {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
-    margin: 20px 2.5%;
+    margin: 40px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
-    justify-content: space-around;
+    justify-content:space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    width:30%;
+    
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+    padding-right:0;
+  
 }
 
 footer {
-    width: 100%;
-    background: black;
+    width: 70%;
+    background:black;
+  
+    
 }
 
 footer nav {
-    width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-around;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size:14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 800px){
+
+ div.logo{
+ margin-left:60px;
+}
+  .img{
+   width:100%;
+  }
+  nav .links{
+    width:70%;
+    margin-left:190px;
+}
+ footer  {
+    width:80%;
+}
+  footer nav {
+    width:60%;}
+}
+@media (max-width: 500px){
+  
+  .img{
+    width:80%;
+  }
+   div.links{
+   flex-direction:column;
+   justify-content:space-between;
+   margin-left:30%;
+  }
+  .top-content {
+ 
+    flex-direction: column;
+    margin-left:30%;
+    width:100%;
+}
+    section.middle-content h2 {
+      margin-left:24%;
+      font-size:25px;
+  }
+  .middle-content .boxes  {
+    
+    flex-direction: column;
+    justify-content:center;
+    width:300%;
+    margin-left:30%;
+  }
+}
+.box1{
+  background-color:teal;
+}
+.box2 {
+  background-color: gold;
+}
+.box3 {
+  background-color: cadetblue;
+}
+.box4 {
+  background-color: coral;
+}
+.box5 {
+  background-color: crimson;
+}
+.box6 {
+  background-color: forestgreen;
+}
+.box7 {
+  background-color: darkorchid;
+}
+.box8 {
+  background-color:hotpink;
+}
+.box9 {
+  background-color: indigo;
+}
+.box10 {
+  background-color: dodgerblue;
+}
+
